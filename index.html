@@ -1,63 +1,57 @@
 <!DOCTYPE HTML>
-<html lang ="en-US">
+<html lang ="en-us">
 
-  <head>
-    <title>Homepage</title>
+	<head>
+		<title>Homepage</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 	</head>
 
-  <body>
-    <div class="container">
-      <div class="search-block">
-        <form id="search-form" action="https://google.com/search" method="get">
-          <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off" placeholder="/?" />
-          <label for="search"><span id="search-icon" class="fa fa-google"></span></label>
-        </form>
-        <ul id="search-help" class="search-help" style="opacity: 0;"></ul>
-      </div>
-      <div class="blocks">
-        <ul class="block">
-				      <li class="header">google</li>
-				          <li><a href="https://gmail.com">gmail</a></li>
-				          <li><a href="https://drive.google.com">drive</a></li>
-				          <li><a href="https://keep.google.com">keep</a></li>
-				          <li><a href="https://youtube.com">youtube</a></li>
-			        </ul>
-			<ul class="block">
-				<li class="header">reddit</li>
-				<li><a href="https://www.reddit.com/">front page</a></li>
-				<li><a href="https://www.reddit.com/r/pebble">/r/pebble</a></li>
-				<li><a href="https://www.reddit.com/r/oneplus">/r/oneplus</a></li>
-				<li><a href="https://www.reddit.com/r/unixporn">/r/unixporn</a></li>
-				<li><a href="https://www.reddit.com/r/cyberpunk">/r/cyberpunk</a></li>
-				<li><a href="https://www.reddit.com/r/programmerhumor">/r/programmerhumor</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">social</li>
-				<li><a href="https://twitter.com">twitter</a></li>
-				<li><a href="https://instagram.com">instagram</a></li>
-				<li><a href="https://facebook.com">facebook</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">watch</li>
-				<li><a href="https://trakt.tv/">trakt</a></li>
-				<li><a href="https://netflix.com">netflix</a></li>
-				<li><a href="https://www.amazon.com/gp/video/storefront">amazon video</a></li>
-				<li><a href="https://crunchyroll.com/">crunchyroll</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">dev</li>
-				<li><a href="https://gitlab.com">gitlab</a></li>
-				<li><a href="https://codepen.io">codepen</a></li>
-				<li><a href="http://dotshare.it/">dotshare</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">news</li>
-				<li><a href="https://www.producthunt.com/">product hunt</a></li>
-				<li><a href="https://dribbble.com/">dribbble</a></li>
-			</ul>
-  </div>
-</div>
-<script type="text/javascript" src="search.js"></script>
-</body>
+	<body>
+		<div id ="container">
+
+			<div id="searchbox">
+				<h3 style="display: inline;"><span class="blue"> ~ </span> <span class="pink">❯</span> <span class="green">locate</span></h3>
+				<input type="text" id="search" autocapitalize="off" autocorrect="off" autofocus="autofocus" spellcheck="false" placeholder="" onkeypress="searchKeyPress(event)"></input>
+			</div>
+
+			<div id="links">
+				<div class="linksbox">
+					<h3><span class="blue"> ~ </span> <span class="pink">❯</span> [<span class="green">general</span>]<span class="pink">:</span> ls</h3>
+						<a class="cyan" target="blank" href="https://wordpress.com/">blog</a>
+						<a class="cyan" target="blank" href="https://openstreetmap.org">maps</a>
+						<a class="cyan" target="blank" href="https://www.wired.com/">wired</a>
+						<a class="cyan"  target="blank" href="https://mail.protonmail.com/inbox">e-mail</a>
+						<a class="cyan" target="blank" href="https://www.cybrary.it/">cybrary</a>
+						<a class="cyan"  target="blank" href="https://youtube.com">youtube</a>
+				</div>
+
+				<div class="linksbox">
+					<h3><span class="blue"> ~ </span> <span class="pink">❯</span> [<span class="green">reddit</span>]<span class="pink">:</span> ls</h3>
+						<a class="cyan" target="blank" href="https://www.reddit.com/r/wow/">/r/wow</a>
+						<a class="cyan" target="blank" href="https://www.reddit.com/r/woweconomy/">/r/woweconomy</a>
+						<a class="cyan" target="blank" href="https://www.reddit.com/r/wowguilds/">/r/wowguilds</a>
+						<a class="cyan" target="blank" href="https://www.reddit.com/r/CompetitiveWoW/">/r/competitivewow</a>
+						<a class="cyan" target="blank" href="https://www.reddit.com/r/Transmogrification/">/r/transmogrification</a>
+						<a class="cyan" target="blank" href="https://www.reddit.com/r/archlinux/">/r/archlinux</a>
+				</div>
+
+				<div class="linksbox">
+					<h3><span class="blue"> ~ </span> <span class="pink">❯</span> [<span class="green">wow</span>]<span class="pink">:</span> ls</h3>
+			    	<a class="cyan"  target="blank" href="https://us.battle.net/forums/en/wow/">forums</a>
+						<a class="cyan" target="blank" href="http://www.mmo-champion.com/forum.php">mmo-champ</a>
+						<a class="cyan" target="blank" href="http://www.wowhead.com/">wowhead</a>
+						<a class="cyan" target="blank" href="https://www.icy-veins.com/wow/">icy veins</a>
+						<a class="cyan" target="blank" href="https://www.askmrrobot.com/wow/gear">ask mr robot</a>
+						<a class="cyan"  target="blank" href="http://www.ownedcore.com/forums/">ownedcore</a>
+				</div>
+			</div>
+
+		</div>
+
+	 <script type="text/javascript" src="search.js"></script>
+
+	</body>
+
 </html>
